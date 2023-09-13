@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <p id="title">Weather Web App</p>
+    <section>
+        <form method="POST" action="/">
+            <div class="place">
+                <input type="text" name="place" placeholder="place" id=""> <input type="submit" name="" id="">
+            </div>
+            <div class="result">
+                <div class="place">
+                    {{place}}
+                </div>
+                <div>
+                    <div class="temp">
+                        <p> {{temp}}</p>
+                    </div> 
+                    {% if weatherimg != "" %}
+                        <div class="weatherimg">
+                            <img src="{{weatherimg}}" alt="img">
+                        </div>
+                    {% endif %}
+                </div>
+                
+
+
+                <div class="desc">
+                    <p>{{desc}}</p>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

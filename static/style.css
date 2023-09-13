@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+body{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(weather.jpg);
+    background-size: 400vh ;
+    background-repeat: no-repeat;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#title {
+    color: #90e0ef;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-style: oblique;
+}
+
+section{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    color: black;
+    top: 10%;
+    bottom: 15%;
+    right: 15%;
+    left: 15%;
+    width: 70%;
+    border: 2px solid transparent;
+    box-shadow: 5px 5px 50px   #012a4a ;
+    background-image: url(weather.jpg);
+    background-size: 100% 100%;
+}
+.place{
+    position: relative;
+    top: 8px;
+    margin-bottom: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.place input[type=text]{
+    width: 250px;
+    padding: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.place input[type=text]:focus{
+    outline: none;
+    border-color: #ade8f4;
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+}
+.place input[type=submit]{
+        background-color: #023e8a;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14xpx;
+}
+.place input[type=submit]:hover{
+    background-color: #00b4d8;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: inline-block;
+    position: relative;
+    left: 15vw;
+    width: 50vw;
+
+}
+.result .weatherimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    left: 100%;   
+    
+}
+.result .place{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+.result .temp{
+    position: block;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 170px;
+}
+.result .desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    left: 45%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
